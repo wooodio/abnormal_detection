@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경찰청</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='test.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="{{ url_for('static', filename='message.js') }}"></script>
+</head>
+<body>
+    <header class="py-4 bg-image-full" style="background-image: url('https://www.smpa.go.kr/resource/images_2020/main/mainVisual_www_210713.jpg'); height: 100vh; background-size: cover; background-position: center; background-attachment: fixed;" alt="...">
+    
+        <div class="container py-5 px-4">
+            <div class="row justify-content-center">
+                <!-- Chat Box -->
+                <div class="col-7 px-0">
+                    <div class="px-4 py-5 chat-box bg-white" id="chat-box" style="height: 550px;">
+                        <!-- Existing messages will appear here -->
+                        
+                    </div> 
+                    <!-- Typing area -->
+                    <form action="#" class="bg-light">
+                        <div class="input-group">
+                            <input type="text" placeholder="Type a message" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bg-light">
+                            <div class="input-group-append">
+                                <button id="button-addon2" type="submit" class="btn btn-link"> <i class="fa fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
